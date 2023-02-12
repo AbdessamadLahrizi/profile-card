@@ -22,24 +22,15 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-}
-
-/* global */
-
-main::before {
-    content: "";
-    background-image: url(../images/bg-pattern-top.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -500px;
-    left: -300px;
-    width: 1000px;
-    height: 1000px;
+    background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg),
+        url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 49vw bottom 45vh, left 49vw top 50vh;
 }
 
 main {
     min-height: 100vh;
-    background-color: var(--dark-cyan);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,17 +49,6 @@ main {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     position: relative;
-}
-
-main::after {
-    content: "";
-    background-image: url(../images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: -500px;
-    right: -300px;
-    width: 1000px;
-    height: 1000px;
 }
 
 .box>img {
